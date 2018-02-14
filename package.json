@@ -1,16 +1,15 @@
 {
   "name": "e2h-epitech-header",
   "main": "./lib/e2h-epitech-header",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Epitech Headers auto insertion based on a template",
   "keywords": [
-	  "Epitech"
+    "Epitech"
   ],
   "repository": "https://github.com/QLaille/e2h-epitech-header",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
