@@ -1,0 +1,2 @@
+'atom-text-editor':
+  'ctrl-shift-h': 'e2h-epitech-header:addHeader'
