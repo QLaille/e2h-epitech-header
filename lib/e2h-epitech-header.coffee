@@ -33,7 +33,6 @@ module.exports = E2hEpitechHeader =
 
     desc = relativePath + ' file'
     desc = if desc != undefined then desc else 'generic description'
-
     date = new Date()
     year = date.getFullYear()
     if (date.getMonth() < 9)
@@ -42,8 +41,9 @@ module.exports = E2hEpitechHeader =
     text = text.replace('%YEAR', year)
     text = text.replace('%DESCRIPTION', desc)
     text = text.replace('%PROJECT_NAME', projectPath[projectPath.length - 1])
-    if (relativePath == "Makefile")
-      text = text.replace(/\/|\*|\\/g, '#')
+    if (relativePath == "Makefile" || editor.getTitle() == "Makefile")
+      text = text.replace(/(\*\*)|(\/\*)|(\*\/)/g, '##')
+
     if (editor != undefined)
       editor.setCursorBufferPosition([0, 0], autoscroll:false)
       editor.insertText(text, select:true)
