@@ -1,7 +1,7 @@
 {
   "name": "e2h-epitech-header",
   "main": "./lib/e2h-epitech-header",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Epitech Headers auto insertion based on a template",
   "keywords": [
     "Epitech"
